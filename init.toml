@@ -31,13 +31,28 @@
 
   vim_help_language = "cn"
 
-	bootstrap_before = 'myspacevim#before'
-	bootstrap_after = 'myspacevim#after'
+  bootstrap_before = 'myspacevim#before'
+  bootstrap_after = 'myspacevim#after'
 
   windows_smartclose = ''
   escape_key_binding = ''
 
   disabled_plugins = ['vim-node-rpc', 'jedi-vim']
+
+  relativenumber = false
+
+  # enable_vimfiler_gitstatus = true
+
+  filemanager = "vimfiler"
+
+  # enable_neomake = false
+  # enable_ale = true
+
+  # project_rooter_automatically = 0
+  enable_cursorcolumn = true
+  # disabled_plugins = ["neopairs"]
+
+
 
 # Enable autocomplete layer
 [[layers]]
@@ -55,22 +70,29 @@
   name = "debug"
 
 [[layers]]
-	name = "default"
+  name = "default"
+
+# [[layers]]
+  # name = "denite"
+[[layers]]
+  name = "leaderf"
 
 [[layers]]
-	name = "denite"
+  name = "edit"
 
-[[layers]]
-	name = "edit"
-
-[[layers]]
-	name = "foldsearch"
+# [[layers]]
+  # name = "foldsearch"
 
 [[layers]]
   name = "git"
+  git_plugin = 'fugitive'
 
 [[layers]]
-	name = 'incsearch'
+  name = "gtags"
+  # gtagslabel = "pygments"
+
+# [[layers]]
+  # name = 'incsearch'
 
 [[layers]]
   name = "lang#c"
@@ -82,13 +104,16 @@
   name = "lang#html"
 
 # [[layers]]
-	# name = "lang#javascript"
+  # name = "lang#ipynb"
+
+# [[layers]]
+  # name = "lang#javascript"
 
 [[layers]]
   name = "lang#latex"
 
-[[layers]]
-  name = "lang#markdown"
+# [[layers]]
+  # name = "lang#markdown"
 
 [[layers]]
   name = "lang#python"
@@ -124,7 +149,7 @@ default_height = 30
 
 [[layers]]
   name = "ui"
-	enable_scrollbar=true
+  enable_scrollbar=true
 
 [[custom_plugins]]
   repo = 'liuchengxu/space-vim-dark'
@@ -146,9 +171,116 @@ default_height = 30
   repo = 'tpope/vim-speeddating'
   merged = 0
 
+[[custom_plugins]]
+  repo = 'chiel92/vim-autoformat'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'wsdjeg/vim-todo'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'sillybun/vim-repl'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'liuchengxu/vista.vim'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'heavenshell/vim-pydocstring'
+  merged = 0
+
 # [[custom_plugins]]
-  # repo = ''
+  # repo = 'numirias/semshi'
   # merged = 0
+
+# [[custom_plugins]]
+  # repo = 'sheerun/vim-polyglot'
+  # merged = 0
+
+# [[custom_plugins]]
+  # repo = 'jceb/vim-orgmode'
+  # merged = 0
+
+[[custom_plugins]]
+  repo = 'nvie/vim-togglemouse'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'jmcantrell/vim-diffchanges'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'mg979/vim-visual-multi'
+  merged = 0
+[[custom_plugins]]
+  repo = 'solarnz/thrift.vim'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'pseewald/vim-anyfold'
+  merged = 0
+#
+# [[custom_plugins]]
+  # repo = 'tmhedberg/SimpylFold'
+  # merged = 0
+
+[[custom_plugins]]
+  repo = 'axvr/org.vim'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'jiangmiao/auto-pairs'
+  branch = ''
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'lilydjwg/fcitx.vim'
+  branch = 'fcitx4'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'tommcdo/vim-fugitive-blame-ext'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'lfv89/vim-interestingwords'
+  merged = 0
+
+# [[custom_plugins]]
+  # name = 'tmhedberg/simpylfold'
+  # on_ft = ['python']
+
+[[custom_plugins]]
+  repo = 'Konfekt/FastFold'
+  on_ft = ['json']
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'kqito/vim-easy-replace'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'andrewferrier/vim-wrapping-softhard'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'mogelbrod/vim-jsonpath'
+  merged = 0
+  on_ft = ['json']
+
+
+[[custom_plugins]]
+  repo = 'wellle/context.vim'
+  merged = 0
+
+
+[[custom_plugins]]
+  repo = 'Yggdroot/indentLine'
+  merged = 0
+
+
 # [[custom_plugins]]
   # repo = ''
   # merged = 0

@@ -3,6 +3,12 @@ func! myspacevim#before() abort
     au FocusLost * :wa
     au FocusGained,BufEnter * :checktime
 
+    " au FocusGained,BufEnter *.py :RainbowParentheses<CR>
+    augroup rainbow_lisp
+      autocmd!
+      autocmd FileType javascript,cpp,python RainbowParentheses
+    augroup END
+
     " 当文件被其他编辑器修改时，自动加载
     set autowrite
     set autoread
@@ -33,7 +39,7 @@ func! myspacevim#before() abort
 
     " vim-lsp-cxx-highlight 和这个选项存在冲突
     " let g:rainbow_active = 1
-    
+
     " ctrl + ] 查询 cppman
     " 如果想让该快捷键自动查询 man，将Cppman 替换为 Cppman!
     " autocmd FileType c,cpp noremap <C-]> <Esc>:execute "Cppman " . expand("<cword>")<CR>
@@ -41,14 +47,38 @@ func! myspacevim#before() abort
     " 让光标自动进入到popup window 中间
     let g:git_messenger_always_into_popup = v:true
     " 设置映射规则，和 spacevim 保持一致
-    call SpaceVim#custom#SPC('nnoremap', ['g', 'm'], 'GitMessenger', 'show commit message in popup window', 1)
-    call SpaceVim#custom#SPC('nnoremap', ['g', 'l'], 'FloatermNew lazygit', 'open lazygit in floaterm', 1)
+    " call SpaceVim#custom#SPC('nnoremap', ['g', 'm'], 'GitMessenger', 'show commit message in popup window', 1)
+    " call SpaceVim#custom#SPC('nnoremap', ['g', 'l'], 'FloatermNew lazygit', 'open lazygit in floaterm', 1)
 
     " 关闭所有隐藏设置
-		let g:tex_conceal = ""
+    let g:tex_conceal = ""
 
     set mouse=""
+
+    " call SpaceVim#custom#LangSPCGroupName('python', ['R'], '+Read–Eval–Print-Loop(REPL)')
+    " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 't'], 'REPLToggle', 'REPLToggle', 1)
+    " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 'h'], 'REPLHide', 'REPLHide', 1)
+    " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 'e'], 'REPLSendSession', 'the whole block will be sent to the REPL environment', 1)
+    " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 's'], 'REPLDebugStopAtCurrentLine', 'ipdb will be run and the program will be stopped at that line', 1)
+    " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 'l'], 'REPLPDBN', 'run a single line', 1)
+    " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 'f'], 'REPLPDBS', 'run a single line but will jump into functions', 1)
 endf
 
 func! myspacevim#after() abort
+    let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
+    set guicursor=
+    let g:Lf_WindowPosition = 'popup'
+	nnoremap j gj
+	nnoremap gj j
+	" set autochdir
+	nnoremap <silent> <leader>dp V:diffput<cr>
+	nnoremap <silent> <leader>dg V:diffget<cr>
+
+	nnoremap <silent> <leader>rt :REPLToggle<cr>
+	nnoremap <silent> <leader>rh :REPLHide<cr>
+
+    set showbreak=↪\
+    set breakindent
+
+    let g:indentLine_setColors = 0
 endf
