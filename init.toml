@@ -72,16 +72,11 @@
 [[layers]]
   name = "default"
 
-# [[layers]]
-  # name = "denite"
 [[layers]]
   name = "leaderf"
 
 [[layers]]
   name = "edit"
-
-# [[layers]]
-  # name = "foldsearch"
 
 [[layers]]
   name = "git"
@@ -89,10 +84,7 @@
 
 [[layers]]
   name = "gtags"
-  # gtagslabel = "pygments"
-
-# [[layers]]
-  # name = 'incsearch'
+  gtagslabel = "ctags"
 
 [[layers]]
   name = "lang#c"
@@ -103,17 +95,8 @@
 [[layers]]
   name = "lang#html"
 
-# [[layers]]
-  # name = "lang#ipynb"
-
-# [[layers]]
-  # name = "lang#javascript"
-
 [[layers]]
   name = "lang#latex"
-
-# [[layers]]
-  # name = "lang#markdown"
 
 [[layers]]
   name = "lang#python"
@@ -181,6 +164,7 @@ default_height = 30
 
 [[custom_plugins]]
   repo = 'sillybun/vim-repl'
+  on_ft = ['python']
   merged = 0
 
 [[custom_plugins]]
@@ -189,6 +173,7 @@ default_height = 30
 
 [[custom_plugins]]
   repo = 'heavenshell/vim-pydocstring'
+  on_ft = ['python']
   merged = 0
 
 # [[custom_plugins]]
@@ -278,6 +263,14 @@ default_height = 30
 
 [[custom_plugins]]
   repo = 'Yggdroot/indentLine'
+  on_ft = ['python']
+  merged = 0
+
+
+[[custom_plugins]]
+  repo = 'kkoomen/vim-doge'
+  on_ft = ['cpp']
+  build = ''
   merged = 0
 
 
