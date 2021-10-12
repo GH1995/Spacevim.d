@@ -171,11 +171,6 @@ default_height = 30
   repo = 'liuchengxu/vista.vim'
   merged = 0
 
-[[custom_plugins]]
-  repo = 'heavenshell/vim-pydocstring'
-  on_ft = ['python']
-  merged = 0
-
 # [[custom_plugins]]
   # repo = 'numirias/semshi'
   # merged = 0
