@@ -81,4 +81,6 @@ func! myspacevim#after() abort
     set breakindent
 
     let g:indentLine_setColors = 0
+    set splitbelow
+    set splitright
 endf
