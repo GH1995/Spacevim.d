@@ -83,4 +83,6 @@ func! myspacevim#after() abort
     let g:indentLine_setColors = 0
     set splitbelow
     set splitright
+
+    let g:doge_doc_standard_python = 'sphinx'
 endf

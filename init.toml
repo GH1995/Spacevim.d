@@ -278,7 +278,7 @@ default_height = 30
 
 [[custom_plugins]]
   repo = 'kkoomen/vim-doge'
-  on_ft = ['cpp']
+  on_ft = ['cpp', 'python']
   build = ''
   merged = 0
 
