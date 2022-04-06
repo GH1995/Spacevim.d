@@ -229,10 +229,10 @@ default_height = 30
   # branch = ''
   merged = 0
 
-[[custom_plugins]]
-  repo = 'lilydjwg/fcitx.vim'
-  branch = 'fcitx4'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'lilydjwg/fcitx.vim'
+  # branch = 'fcitx4'
+  # merged = 0
 
 [[custom_plugins]]
   repo = 'tommcdo/vim-fugitive-blame-ext'
@@ -282,6 +282,9 @@ default_height = 30
   build = ''
   merged = 0
 
+[[custom_plugins]]
+  repo = 'hotoo/pangu.vim'
+  merged = 0
 
 # [[custom_plugins]]
   # repo = ''
