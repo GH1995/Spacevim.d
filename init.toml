@@ -162,9 +162,9 @@ default_height = 30
   merged = 0
 
 # https://github.com/wsdjeg/vim-todo
-[[custom_plugins]]
-  repo = 'wsdjeg/vim-todo'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'wsdjeg/vim-todo'
+  # merged = 0
 
 # https://github.com/sillybun/vim-repl
 [[custom_plugins]]
@@ -199,48 +199,47 @@ default_height = 30
   # merged = 0
 
 # https://github.com/mg979/vim-visual-multi
-[[custom_plugins]]
-  repo = 'mg979/vim-visual-multi'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'mg979/vim-visual-multi'
+  # merged = 0
 
 # todo
-[[custom_plugins]]
-  repo = 'solarnz/thrift.vim'
-  on_ft = ['thrift']
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'solarnz/thrift.vim'
+  # on_ft = ['thrift']
+  # merged = 0
 
-[[custom_plugins]]
-  repo = 'pseewald/vim-anyfold'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'pseewald/vim-anyfold'
+  # merged = 0
 #
 # [[custom_plugins]]
   # repo = 'tmhedberg/SimpylFold'
   # merged = 0
 
 # https://github.com/axvr/org.vim
-[[custom_plugins]]
-  repo = 'axvr/org.vim'
-  on_ft = ['org']
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'axvr/org.vim'
+  # on_ft = ['org']
+  # merged = 0
 
 # https://github.com/jiangmiao/auto-pairs
-[[custom_plugins]]
-  repo = 'jiangmiao/auto-pairs'
-  # branch = ''
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'jiangmiao/auto-pairs'
+  # merged = 0
 
 # [[custom_plugins]]
   # repo = 'lilydjwg/fcitx.vim'
   # branch = 'fcitx4'
   # merged = 0
 
-[[custom_plugins]]
-  repo = 'tommcdo/vim-fugitive-blame-ext'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'tommcdo/vim-fugitive-blame-ext'
+  # merged = 0
 
-[[custom_plugins]]
-  repo = 'lfv89/vim-interestingwords'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'lfv89/vim-interestingwords'
+  # merged = 0
 
 # [[custom_plugins]]
   # name = 'tmhedberg/simpylfold'
@@ -251,18 +250,18 @@ default_height = 30
   on_ft = ['json']
   merged = 0
 
-[[custom_plugins]]
-  repo = 'kqito/vim-easy-replace'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'kqito/vim-easy-replace'
+  # merged = 0
 
 [[custom_plugins]]
   repo = 'andrewferrier/vim-wrapping-softhard'
   merged = 0
 
-[[custom_plugins]]
-  repo = 'mogelbrod/vim-jsonpath'
-  merged = 0
-  on_ft = ['json']
+# [[custom_plugins]]
+  # repo = 'mogelbrod/vim-jsonpath'
+  # merged = 0
+  # on_ft = ['json']
 
 
 [[custom_plugins]]
