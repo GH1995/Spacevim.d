@@ -4,10 +4,10 @@ func! myspacevim#before() abort
     au FocusGained,BufEnter * :checktime
 
     " au FocusGained,BufEnter *.py :RainbowParentheses<CR>
-    augroup rainbow_lisp
-      autocmd!
-      autocmd FileType javascript,cpp,python RainbowParentheses
-    augroup END
+    " augroup rainbow_lisp
+      " autocmd!
+      " autocmd FileType javascript,cpp,python RainbowParentheses
+    " augroup END
 
     " 当文件被其他编辑器修改时，自动加载
     set autowrite
@@ -62,6 +62,7 @@ func! myspacevim#before() abort
     " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 's'], 'REPLDebugStopAtCurrentLine', 'ipdb will be run and the program will be stopped at that line', 1)
     " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 'l'], 'REPLPDBN', 'run a single line', 1)
     " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 'f'], 'REPLPDBS', 'run a single line but will jump into functions', 1)
+    let g:LargeFile = 1
 endf
 
 func! myspacevim#after() abort

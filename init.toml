@@ -139,6 +139,10 @@ default_height = 30
   # merged = 0
 
 [[custom_plugins]]
+  repo = 'vim-scripts/LargeFile'
+  merged = 0
+
+[[custom_plugins]]
   repo = 'roxma/nvim-yarp'
   merged = 0
 
@@ -285,9 +289,6 @@ default_height = 30
   repo = 'hotoo/pangu.vim'
   merged = 0
 
-# [[custom_plugins]]
-  # repo = ''
-  # merged = 0
 
 # [[custom_plugins]]
   # repo = ''
