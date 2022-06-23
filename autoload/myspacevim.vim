@@ -63,6 +63,9 @@ func! myspacevim#before() abort
     " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 'l'], 'REPLPDBN', 'run a single line', 1)
     " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 'f'], 'REPLPDBS', 'run a single line but will jump into functions', 1)
     let g:LargeFile = 1
+
+    let g:vim_dict_config = {'html':'html,javascript,css', 'markdown':'text'}
+
 endf
 
 func! myspacevim#after() abort
@@ -86,4 +89,9 @@ func! myspacevim#after() abort
     set splitright
 
     let g:doge_doc_standard_python = 'sphinx'
+
+    let g:formatdef_latexindent = '"latexindent -"'
+
+    nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')
+    nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
 endf
