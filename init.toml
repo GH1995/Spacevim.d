@@ -297,6 +297,11 @@ default_height = 30
   repo = 'github/copilot.vim'
   merged = 0
 
+# 如果使用 nvim，内部自建了 lsp
+# [[layers]]
+  # name = "lsp"
+  # enabled_clients = ['vimls', 'clangd']
+
 
 # [[custom_plugins]]
   # repo = ''
