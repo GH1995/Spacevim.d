@@ -310,3 +310,7 @@ default_height = 30
 # [[custom_plugins]]
   # repo = ''
   # merged = 0
+
+[[custom_plugins]]
+  repo = 'APZelos/blamer.nvim'
+  merged = 0
