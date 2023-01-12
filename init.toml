@@ -268,9 +268,9 @@ default_height = 30
   # on_ft = ['json']
 
 
-[[custom_plugins]]
-  repo = 'wellle/context.vim'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'wellle/context.vim'
+  # merged = 0
 
 
 # [[custom_plugins]]
@@ -313,4 +313,13 @@ default_height = 30
 
 [[custom_plugins]]
   repo = 'APZelos/blamer.nvim'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'rhysd/accelerated-jk'
+  merged = 0
+
+
+[[custom_plugins]]
+  repo = 'ntpeters/vim-better-whitespace'
   merged = 0
