@@ -323,3 +323,16 @@ default_height = 30
 [[custom_plugins]]
   repo = 'ntpeters/vim-better-whitespace'
   merged = 0
+
+[[custom_plugins]]
+  repo = 'gwilk/hive-syntax.vim'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'will133/vim-dirdiff'
+  merged = 0
+
+
+[[custom_plugins]]
+  repo = 'pseewald/vim-anyfold'
+  merged = 0
