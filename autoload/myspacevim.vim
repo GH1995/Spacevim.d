@@ -53,7 +53,7 @@ func! myspacevim#before() abort
     " 关闭所有隐藏设置
     let g:tex_conceal = ""
 
-    set mouse=""
+    set mouse=a
 
     " call SpaceVim#custom#LangSPCGroupName('python', ['R'], '+Read–Eval–Print-Loop(REPL)')
     " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 't'], 'REPLToggle', 'REPLToggle', 1)
@@ -72,8 +72,7 @@ func! myspacevim#after() abort
     let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
     set guicursor=
     let g:Lf_WindowPosition = 'popup'
-	nnoremap j gj
-	nnoremap gj j
+
 	" set autochdir
 	nnoremap <silent> <leader>dp V:diffput<cr>
 	nnoremap <silent> <leader>dg V:diffget<cr>
@@ -91,6 +90,9 @@ func! myspacevim#after() abort
     let g:doge_doc_standard_python = 'sphinx'
 
     let g:formatdef_latexindent = '"latexindent -"'
+
+    " tab to 4 space
+    set expandtab ts=4 sw=4 ai
 
     nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')
     nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')

@@ -41,9 +41,13 @@
 
   relativenumber = false
 
-  # enable_vimfiler_gitstatus = true
-
   filemanager = "vimfiler"
+  enable_vimfiler_gitstatus = false
+  enable_vimfiler_welcome = false
+
+  expand_tab = true
+  statusline_unicode = false
+
 
   # enable_neomake = false
   # enable_ale = true
@@ -80,7 +84,7 @@
 
 [[layers]]
   name = "git"
-  git_plugin = 'fugitive'
+  # git_plugin = 'fugitive'
 
 [[layers]]
   name = "gtags"
@@ -106,6 +110,9 @@
 
 [[layers]]
   name = "lang#toml"
+
+[[layers]]
+  name = "lang#lua"
 
 # [[layers]]
   # name = "lang#typescript"
@@ -336,3 +343,12 @@ default_height = 30
 [[custom_plugins]]
   repo = 'pseewald/vim-anyfold'
   merged = 0
+
+[[custom_plugins]]
+  repo = 'wfxr/minimap.vim'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'tversteeg/registers.nvim'
+  merged = 0
+
