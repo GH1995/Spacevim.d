@@ -96,4 +96,10 @@ func! myspacevim#after() abort
 
     nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')
     nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
+    " let g:clang_library_path = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+    "
+    let s:clang_library_path='/Library/Developer/CommandLineTools/usr/lib'
+    if isdirectory(s:clang_library_path)
+        let g:clang_library_path=s:clang_library_path
+    endif
 endf

@@ -56,6 +56,10 @@
   enable_cursorcolumn = true
   # disabled_plugins = ["neopairs"]
 
+[[layers]]
+  name = "telescope"
+[[layers]]
+  name = "zettelkasten"
 
 
 # Enable autocomplete layer
@@ -310,16 +314,8 @@ default_height = 30
   # enabled_clients = ['vimls', 'clangd']
 
 
-# [[custom_plugins]]
-  # repo = ''
-  # merged = 0
-
-# [[custom_plugins]]
-  # repo = ''
-  # merged = 0
-
 [[custom_plugins]]
-  repo = 'APZelos/blamer.nvim'
+  repo = 'ryanoasis/vim-devicons'
   merged = 0
 
 [[custom_plugins]]
@@ -352,3 +348,10 @@ default_height = 30
   repo = 'tversteeg/registers.nvim'
   merged = 0
 
+# [[custom_plugins]]
+  # repo = 'APZelos/blamer.nvim'
+  # merged = 0
+
+# [[custom_plugins]]
+  # repo = ''
+  # merged = 0
