@@ -48,7 +48,6 @@
   expand_tab = true
   statusline_unicode = false
 
-
   # enable_neomake = false
   # enable_ale = true
 
@@ -58,9 +57,9 @@
 
 [[layers]]
   name = "telescope"
+
 [[layers]]
   name = "zettelkasten"
-
 
 # Enable autocomplete layer
 [[layers]]
@@ -88,7 +87,6 @@
 
 [[layers]]
   name = "git"
-  # git_plugin = 'fugitive'
 
 [[layers]]
   name = "gtags"
@@ -188,9 +186,9 @@ default_height = 30
   merged = 0
 
 # https://github.com/liuchengxu/vista.vim
-# [[custom_plugins]]
-  # repo = 'liuchengxu/vista.vim'
-  # merged = 0
+[[custom_plugins]]
+  repo = 'liuchengxu/vista.vim'
+  merged = 0
 
 # [[custom_plugins]]
   # repo = 'numirias/semshi'
