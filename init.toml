@@ -41,7 +41,7 @@
 
   relativenumber = false
 
-  filemanager = "vimfiler"
+  # filemanager = "vimfiler"
   enable_vimfiler_gitstatus = false
   enable_vimfiler_welcome = false
 
@@ -76,6 +76,9 @@
 [[layers]]
   name = "debug"
 
+# [[layers]]
+  # name = "ctrlp"
+
 [[layers]]
   name = "default"
 
@@ -87,6 +90,10 @@
 
 [[layers]]
   name = "git"
+  git_plugin = 'fugitive'
+
+[[layers]]
+  name = "VersionControl"
 
 [[layers]]
   name = "gtags"
@@ -338,13 +345,21 @@ default_height = 30
   repo = 'pseewald/vim-anyfold'
   merged = 0
 
-[[custom_plugins]]
-  repo = 'wfxr/minimap.vim'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'wfxr/minimap.vim'
+  # merged = 0
 
 [[custom_plugins]]
   repo = 'tversteeg/registers.nvim'
   merged = 0
+
+# [[custom_plugins]]
+  # repo = 'f-person/git-blame.nvim'
+  # merged = 0
+
+# [[custom_plugins]]
+  # repo = ''
+  # merged = 0
 
 # [[custom_plugins]]
   # repo = 'APZelos/blamer.nvim'
