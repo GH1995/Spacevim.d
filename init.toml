@@ -113,6 +113,8 @@
 
 [[layers]]
   name = "lang#python"
+  enable_typeinfo = true
+
 
 [[layers]]
   name = "lang#sh"
@@ -145,6 +147,9 @@ default_height = 30
 
 [[layers]]
   name = "tools"
+
+[[layers]]
+  name = "todo"
 
 [[layers]]
   name = "ui"
@@ -356,6 +361,25 @@ default_height = 30
 # [[custom_plugins]]
   # repo = 'f-person/git-blame.nvim'
   # merged = 0
+
+[[custom_plugins]]
+  repo = 'karb94/neoscroll.nvim'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'mpyatishev/vim-sqlformat'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'folke/noice.nvim'
+  merged = 0
+
+[[custom_plugins]]
+  repo = 'nvim-lua/plenary.nvim'
+  merged = 0
+[[custom_plugins]]
+  repo = 'sindrets/diffview.nvim'
+  merged = 0
 
 # [[custom_plugins]]
   # repo = ''

@@ -66,6 +66,7 @@ func! myspacevim#before() abort
 
     let g:vim_dict_config = {'html':'html,javascript,css', 'markdown':'text'}
 
+    let g:spacevim_sidebar_width = 80
 endf
 
 func! myspacevim#after() abort
@@ -104,4 +105,15 @@ func! myspacevim#after() abort
     endif
 
     set termguicolors
+
+    " let g:neoformat_python_black = {
+        " \ 'exe': 'black',
+        " \ 'stdin': 1,
+        " \ 'args': ['-q', '-'],
+        " \ }
+    " let g:neoformat_enabled_python = ['black']
+
+    lua require('neoscroll').setup()
+
+    lua require('registers').setup()
 endf
