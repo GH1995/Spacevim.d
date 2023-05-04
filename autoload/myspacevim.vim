@@ -40,10 +40,6 @@ func! myspacevim#before() abort
     " vim-lsp-cxx-highlight 和这个选项存在冲突
     " let g:rainbow_active = 1
 
-    " ctrl + ] 查询 cppman
-    " 如果想让该快捷键自动查询 man，将Cppman 替换为 Cppman!
-    " autocmd FileType c,cpp noremap <C-]> <Esc>:execute "Cppman " . expand("<cword>")<CR>
-
     " 让光标自动进入到popup window 中间
     let g:git_messenger_always_into_popup = v:true
     " 设置映射规则，和 spacevim 保持一致
@@ -52,8 +48,6 @@ func! myspacevim#before() abort
 
     " 关闭所有隐藏设置
     let g:tex_conceal = ""
-
-    set mouse=a
 
     " call SpaceVim#custom#LangSPCGroupName('python', ['R'], '+Read–Eval–Print-Loop(REPL)')
     " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 't'], 'REPLToggle', 'REPLToggle', 1)
@@ -66,7 +60,7 @@ func! myspacevim#before() abort
 
     let g:vim_dict_config = {'html':'html,javascript,css', 'markdown':'text'}
 
-    let g:spacevim_sidebar_width = 80
+    " let g:spacevim_sidebar_width = 80
 endf
 
 func! myspacevim#after() abort
