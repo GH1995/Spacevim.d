@@ -66,7 +66,6 @@ endf
 func! myspacevim#after() abort
     let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
     set guicursor=
-    let g:Lf_WindowPosition = 'popup'
 
 	" set autochdir
 	nnoremap <silent> <leader>dp V:diffput<cr>
@@ -106,6 +105,13 @@ func! myspacevim#after() abort
         " \ 'args': ['-q', '-'],
         " \ }
     " let g:neoformat_enabled_python = ['black']
+    let g:pydocstring_doq_path = '/opt/homebrew/bin/doq'
+
+    let g:Lf_WindowPosition = 'popup'
+    let g:Lf_CommandMap = {'<C-K>': ['<Up>', '<C-K>'], '<C-J>': ['<Down>', '<C-J>']}
+    let g:Lf_HideHelp = 0
+    let g:Lf_AutoResize = 1
+
 
     lua require('neoscroll').setup()
 

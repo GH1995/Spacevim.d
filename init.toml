@@ -121,11 +121,11 @@
 [[layers]]
   name = "lang#sh"
 
-[[layers]]
-  name = "lang#toml"
-
-[[layers]]
-  name = "lang#lua"
+# [[layers]]
+  # name = "lang#toml"
+#
+# [[layers]]
+  # name = "lang#lua"
 
 # [[layers]]
   # name = "lang#typescript"
@@ -133,16 +133,16 @@
 [[layers]]
   name = "lang#vim"
 
-[[layers]]
-  name = "lang#vue"
+# [[layers]]
+  # name = "lang#vue"
+#
+# [[layers]]
+  # name = "lang#xml"
 
 [[layers]]
-  name = "lang#xml"
-
-[[layers]]
-name = 'shell'
-default_position = 'bottom'
-default_height = 30
+  name = 'shell'
+  default_position = 'bottom'
+  default_height = 30
 
 [[layers]]
   name = "sudo"
