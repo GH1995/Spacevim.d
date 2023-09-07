@@ -165,13 +165,13 @@
   repo = 'vim-scripts/LargeFile'
   merged = 0
 
-[[custom_plugins]]
-  repo = 'roxma/nvim-yarp'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'roxma/nvim-yarp'
+  # merged = 0
 
-[[custom_plugins]]
-  repo = 'roxma/vim-hug-neovim-rpc'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'roxma/vim-hug-neovim-rpc'
+  # merged = 0
 
 # doc: https://devhints.io/vim-easyalign
 [[custom_plugins]]
@@ -391,6 +391,7 @@
   repo = 'nvim-orgmode/orgmode'
   merged = 0
 
-# [[custom_plugins]]
-  # repo = ''
-  # merged = 0
+[[custom_plugins]]
+  repo = 'rcarriga/nvim-notify'
+  merged = 0
+
