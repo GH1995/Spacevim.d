@@ -387,9 +387,9 @@
   repo = 'shmup/vim-sql-syntax'
   merged = 0
 
-# [[custom_plugins]]
-  # repo = 'APZelos/blamer.nvim'
-  # merged = 0
+[[custom_plugins]]
+  repo = 'nvim-orgmode/orgmode'
+  merged = 0
 
 # [[custom_plugins]]
   # repo = ''
