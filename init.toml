@@ -383,9 +383,9 @@
   repo = 'sindrets/diffview.nvim'
   merged = 0
 
-# [[custom_plugins]]
-  # repo = ''
-  # merged = 0
+[[custom_plugins]]
+  repo = 'shmup/vim-sql-syntax'
+  merged = 0
 
 # [[custom_plugins]]
   # repo = 'APZelos/blamer.nvim'

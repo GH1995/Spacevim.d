@@ -98,6 +98,7 @@ func! myspacevim#after() abort
     endif
 
     set termguicolors
+    set guicursor=i:block
 
     " let g:neoformat_python_black = {
         " \ 'exe': 'black',
