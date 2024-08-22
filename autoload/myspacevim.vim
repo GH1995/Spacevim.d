@@ -56,7 +56,7 @@ func! myspacevim#before() abort
     " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 's'], 'REPLDebugStopAtCurrentLine', 'ipdb will be run and the program will be stopped at that line', 1)
     " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 'l'], 'REPLPDBN', 'run a single line', 1)
     " call SpaceVim#custom#LangSPC('python', 'nore',  ['R', 'f'], 'REPLPDBS', 'run a single line but will jump into functions', 1)
-    let g:LargeFile = 1
+    " let g:LargeFile = 1
 
     let g:vim_dict_config = {'html':'html,javascript,css', 'markdown':'text'}
 
@@ -81,15 +81,13 @@ func! myspacevim#after() abort
     set splitbelow
     set splitright
 
-    let g:doge_doc_standard_python = 'sphinx'
-
     let g:formatdef_latexindent = '"latexindent -"'
 
     " tab to 4 space
     set expandtab ts=4 sw=4 ai
 
-    nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')
-    nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
+    " nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')
+    " nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
     " let g:clang_library_path = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
     "
     let s:clang_library_path='/Library/Developer/CommandLineTools/usr/lib'
@@ -106,15 +104,16 @@ func! myspacevim#after() abort
         " \ 'args': ['-q', '-'],
         " \ }
     " let g:neoformat_enabled_python = ['black']
-    let g:pydocstring_doq_path = '/opt/homebrew/bin/doq'
 
     let g:Lf_WindowPosition = 'popup'
     let g:Lf_CommandMap = {'<C-K>': ['<Up>', '<C-K>'], '<C-J>': ['<Down>', '<C-J>']}
     let g:Lf_HideHelp = 0
     let g:Lf_AutoResize = 1
 
+    set clipboard=unnamed
 
-    lua require('neoscroll').setup()
-
-    lua require('registers').setup()
+    " 定义 pgFormatter 格式化工具
+    " let g:formatdef_pgformatter = '"pg_format -u 1"'
+    " 将 pgFormatter 设置为 SQL 的默认格式化工具
+    " let g:formatters_sql = ['pgformatter']
 endf

@@ -37,7 +37,7 @@
   windows_smartclose = ''
   escape_key_binding = ''
 
-  disabled_plugins = ['vim-node-rpc', 'jedi-vim']
+  # disabled_plugins = ['vim-node-rpc', 'jedi-vim']
 
   relativenumber = false
 
@@ -58,13 +58,6 @@
   todo_prefix = '@'
 
 [[layers]]
-  name = "telescope"
-
-[[layers]]
-  name = "zettelkasten"
-
-# Enable autocomplete layer
-[[layers]]
   name = 'autocomplete'
   auto_completion_return_key_behavior = "complete"
   auto_completion_tab_key_behavior = "smart"
@@ -74,12 +67,6 @@
 
 [[layers]]
   name = "colorscheme"
-
-[[layers]]
-  name = "debug"
-
-# [[layers]]
-  # name = "ctrlp"
 
 [[layers]]
   name = "default"
@@ -105,27 +92,12 @@
   name = "lang#c"
 
 [[layers]]
-  name = "lang#dockerfile"
-
-[[layers]]
-  name = "lang#html"
-
-[[layers]]
-  name = "lang#latex"
-
-[[layers]]
   name = "lang#python"
   enable_typeinfo = true
 
 
 [[layers]]
   name = "lang#sh"
-
-# [[layers]]
-  # name = "lang#toml"
-#
-# [[layers]]
-  # name = "lang#lua"
 
 # [[layers]]
   # name = "lang#typescript"
@@ -135,17 +107,11 @@
 
 # [[layers]]
   # name = "lang#vue"
-#
-# [[layers]]
-  # name = "lang#xml"
 
 [[layers]]
   name = 'shell'
   default_position = 'bottom'
   default_height = 30
-
-[[layers]]
-  name = "sudo"
 
 [[layers]]
   name = "tools"
@@ -157,241 +123,195 @@
   name = "ui"
   enable_scrollbar=true
 
-# [[custom_plugins]]
-  # repo = 'liuchengxu/space-vim-dark'
-  # merged = 0
-
+# ----------- stable -------------------
+# vim 上一次打开的位置
 [[custom_plugins]]
-  repo = 'vim-scripts/LargeFile'
-  merged = 0
+  repo = 'farmergreg/vim-lastplace'
 
 # [[custom_plugins]]
-  # repo = 'roxma/nvim-yarp'
-  # merged = 0
-
-# [[custom_plugins]]
-  # repo = 'roxma/vim-hug-neovim-rpc'
-  # merged = 0
+  # repo = 'vim-scripts/LargeFile'
 
 # doc: https://devhints.io/vim-easyalign
 [[custom_plugins]]
   repo = 'junegunn/vim-easy-align'
-  merged = 0
+  merged = false
 
 # https://github.com/tpope/vim-speeddating
 [[custom_plugins]]
   repo = 'tpope/vim-speeddating'
-  merged = 0
 
 # https://github.com/vim-autoformat/vim-autoformat
 [[custom_plugins]]
   repo = 'chiel92/vim-autoformat'
-  merged = 0
 
 # https://github.com/wsdjeg/vim-todo
 # [[custom_plugins]]
   # repo = 'wsdjeg/vim-todo'
-  # merged = 0
 
 # https://github.com/sillybun/vim-repl
 [[custom_plugins]]
   repo = 'sillybun/vim-repl'
   on_ft = ['python']
-  merged = 0
 
 # https://github.com/liuchengxu/vista.vim
 [[custom_plugins]]
   repo = 'liuchengxu/vista.vim'
-  merged = 0
 
 # [[custom_plugins]]
   # repo = 'numirias/semshi'
-  # merged = 0
 
 # [[custom_plugins]]
   # repo = 'sheerun/vim-polyglot'
-  # merged = 0
 
 # [[custom_plugins]]
   # repo = 'jceb/vim-orgmode'
-  # merged = 0
 
 # https://github.com/nvie/vim-togglemouse
 [[custom_plugins]]
   repo = 'nvie/vim-togglemouse'
-  merged = 0
 
 # [[custom_plugins]]
   # repo = 'jmcantrell/vim-diffchanges'
-  # merged = 0
 
 # https://github.com/mg979/vim-visual-multi
 # [[custom_plugins]]
   # repo = 'mg979/vim-visual-multi'
-  # merged = 0
 
 # todo
 # [[custom_plugins]]
   # repo = 'solarnz/thrift.vim'
   # on_ft = ['thrift']
-  # merged = 0
 
 # [[custom_plugins]]
   # repo = 'pseewald/vim-anyfold'
-  # merged = 0
 #
 # [[custom_plugins]]
   # repo = 'tmhedberg/SimpylFold'
-  # merged = 0
 
 # https://github.com/axvr/org.vim
 # [[custom_plugins]]
   # repo = 'axvr/org.vim'
   # on_ft = ['org']
-  # merged = 0
 
 # https://github.com/jiangmiao/auto-pairs
 # [[custom_plugins]]
   # repo = 'jiangmiao/auto-pairs'
-  # merged = 0
 
 # [[custom_plugins]]
   # repo = 'lilydjwg/fcitx.vim'
   # branch = 'fcitx4'
-  # merged = 0
 
 # [[custom_plugins]]
   # repo = 'tommcdo/vim-fugitive-blame-ext'
-  # merged = 0
 
 # [[custom_plugins]]
   # repo = 'lfv89/vim-interestingwords'
-  # merged = 0
 
 # [[custom_plugins]]
   # name = 'tmhedberg/simpylfold'
   # on_ft = ['python']
 
-[[custom_plugins]]
-  repo = 'Konfekt/FastFold'
-  on_ft = ['json']
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'Konfekt/FastFold'
+  # on_ft = ['json']
 
 # [[custom_plugins]]
   # repo = 'kqito/vim-easy-replace'
-  # merged = 0
 
-[[custom_plugins]]
-  repo = 'andrewferrier/vim-wrapping-softhard'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'andrewferrier/vim-wrapping-softhard'
 
 # [[custom_plugins]]
   # repo = 'mogelbrod/vim-jsonpath'
-  # merged = 0
   # on_ft = ['json']
 
 
 # [[custom_plugins]]
   # repo = 'wellle/context.vim'
-  # merged = 0
 
 
 # [[custom_plugins]]
   # repo = 'Yggdroot/indentLine'
   # on_ft = ['python', 'json', 'cpp']
-  # merged = 0
 
 
-[[custom_plugins]]
-  repo = 'kkoomen/vim-doge'
-  on_ft = ['cpp', 'python']
-  build = ''
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'kkoomen/vim-doge'
+  # on_ft = ['cpp', 'python']
+  # build = ''
 
 [[custom_plugins]]
   repo = 'hotoo/pangu.vim'
-  merged = 0
 
-[[custom_plugins]]
-  repo = 'skywind3000/vim-dict'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'skywind3000/vim-dict'
 
-[[custom_plugins]]
-  repo = 'github/copilot.vim'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'github/copilot.vim'
 
 # 如果使用 nvim，内部自建了 lsp
 # [[layers]]
   # name = "lsp"
   # enabled_clients = ['vimls', 'clangd']
 
-
+# ----------- test -------------------
 [[custom_plugins]]
   repo = 'ryanoasis/vim-devicons'
-  merged = 0
 
 [[custom_plugins]]
   repo = 'rhysd/accelerated-jk'
-  merged = 0
+
+# [[custom_plugins]]
+  # repo = 'ntpeters/vim-better-whitespace'
+
+# [[custom_plugins]]
+  # repo = 'gwilk/hive-syntax.vim'
+
+# [[custom_plugins]]
+  # repo = 'will133/vim-dirdiff'
 
 
-[[custom_plugins]]
-  repo = 'ntpeters/vim-better-whitespace'
-  merged = 0
-
-[[custom_plugins]]
-  repo = 'gwilk/hive-syntax.vim'
-  merged = 0
-
-[[custom_plugins]]
-  repo = 'will133/vim-dirdiff'
-  merged = 0
-
-
-[[custom_plugins]]
-  repo = 'pseewald/vim-anyfold'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'pseewald/vim-anyfold'
 
 # [[custom_plugins]]
   # repo = 'wfxr/minimap.vim'
-  # merged = 0
 
-[[custom_plugins]]
-  repo = 'tversteeg/registers.nvim'
-  merged = 0
+# [[custom_plugins]]
+  # repo = 'tversteeg/registers.nvim'
 
 # [[custom_plugins]]
   # repo = 'f-person/git-blame.nvim'
-  # merged = 0
+
+# [[custom_plugins]]
+  # repo = 'karb94/neoscroll.nvim'
+
+# [[custom_plugins]]
+  # repo = 'mpyatishev/vim-sqlformat'
+
+# [[custom_plugins]]
+  # repo = 'folke/noice.nvim'
+
+# [[custom_plugins]]
+  # repo = 'nvim-lua/plenary.nvim'
+# [[custom_plugins]]
+  # repo = 'sindrets/diffview.nvim'
+
+# [[custom_plugins]]
+  # repo = 'shmup/vim-sql-syntax'
+#
+# [[custom_plugins]]
+  # repo = 'nvim-orgmode/orgmode'
+#
+# [[custom_plugins]]
+  # repo = 'rcarriga/nvim-notify'
 
 [[custom_plugins]]
-  repo = 'karb94/neoscroll.nvim'
-  merged = 0
+  repo = 'carbonscott/vim-smartfold'
+  on_ft = ['config']
 
 [[custom_plugins]]
-  repo = 'mpyatishev/vim-sqlformat'
-  merged = 0
+  repo = 'pseewald/vim-anyfold'
 
 [[custom_plugins]]
-  repo = 'folke/noice.nvim'
-  merged = 0
-
-[[custom_plugins]]
-  repo = 'nvim-lua/plenary.nvim'
-  merged = 0
-[[custom_plugins]]
-  repo = 'sindrets/diffview.nvim'
-  merged = 0
-
-[[custom_plugins]]
-  repo = 'shmup/vim-sql-syntax'
-  merged = 0
-
-[[custom_plugins]]
-  repo = 'nvim-orgmode/orgmode'
-  merged = 0
-
-[[custom_plugins]]
-  repo = 'rcarriga/nvim-notify'
-  merged = 0
-
+  repo = 'chiphogg/vim-prototxt'
